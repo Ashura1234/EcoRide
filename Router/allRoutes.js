@@ -4,7 +4,6 @@ import Route from "./route.js";
 export const allRoutes = [
     new Route("/", "Accueil", "/pages/accueil.html"),
     new Route("404", "Page introuvable", "/pages/404.html"),
-
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
