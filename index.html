@@ -4,20 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="scss/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Jockey+One&family=Montaga&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Jockey+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montaga&display=swap" rel="stylesheet">
     <title>Ecoride</title>
 </head>
 <body>
     
-    <header> header du site  <i class="bi bi-airplane"></i></header>
+    <header> 
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <!-- Conteneur pour icône + logo -->
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-search text-white"></i>
+                    <div class="Logo ms-2">
+                        <img src="./images/Capture d'écran 2025-02-19 095117.png" alt="Logo" width="70" href="/">
+                    </div>
+                </div>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/">ITINERAIRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/habitat">NOUS CONTACTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/services">COVOITURAGE</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown" data-show="admin">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-secondary" aria-labelledby="profileDropdown">
+                                <li><a class="nav-link text-white" href="/ficheReservation">MES RESERVATIONS</a></li>
+                                <li><a class="nav-link text-white" href="functions/signout.php">CONNEXION</a></li>
+                                <li><a class="nav-link text-white" href="functions/signin.php">DÉCONNEXION</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
 
     <main id="main-page">
         Ecoride
-        <!-- contenu de la page ici par injection-->
+        
     </main>
 
-    <footer> Le footer de mon site </footer>
+    <footer> Le footer de mon site  </footer>
 
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

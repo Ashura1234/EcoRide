@@ -1,0 +1,45 @@
+@import 'custom';
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+.bi {
+    font-size: 32px; /* Ajuste la taille */
+}
+
+.Logo {
+    margin-left: 20px; /* Déplace vers la droite */
+}
+
+/* Assurer que la navbar est bien alignée */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Aligner l'icône de recherche */
+.navbar .bi-search {
+    font-size: 24px; /* Ajuster la taille */
+    margin-right: 10px; /* Espacement entre l'icône et le logo */
+    vertical-align: middle;
+}
+
+/* Centrer et ajuster le logo */
+.Logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Ajuster l'alignement des liens et dropdowns */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Espacement entre les éléments */
+.nav-item {
+    margin: 0 10px;
+}
+
+/* Style dropdown pour éviter tout décalage */
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
