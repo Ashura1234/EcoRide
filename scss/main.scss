@@ -43,3 +43,18 @@
     right: 0;
     left: auto;
 }
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+main{
+    margin-bottom: 150px;
+}
+
+footer.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

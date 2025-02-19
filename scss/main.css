@@ -12009,4 +12009,19 @@ textarea.form-control-lg {
 .navbar-nav .dropdown-menu {
   right: 0;
   left: auto;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 150px;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
