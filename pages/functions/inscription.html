@@ -1,0 +1,66 @@
+<div class="container mt-4 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-4 rounded" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center text-primary mb-3">Connexion</h3>
+        <form>
+            <!-- Champ Prénom -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="name" placeholder="Prénom..." required>
+            </div>
+
+            <!-- Nom -->
+            <div class="mb-3">
+                <label for="firstName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Nom" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Pseudo" class="form-label">Pseudo</label>
+                <input type="text" class="form-control" id="Pseudo" placeholder="Pseudo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="mot de passe" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="passwordConfirm" class="form-label">Confirmer le mot de passe</label>
+                <input type="password" class="form-control" id="passwordConfirm" placeholder="confirmer le mot de passe" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" 
+                    placeholder="Votre numéro de téléphone" 
+                    pattern="^\+?[0-9]{10,15}$" 
+                    required>
+                <small class="form-text text-muted">Format : +33 6 12 34 56 78</small>
+            </div>
+            
+            <div class="mb-3">
+                <label for="yearsBorn" class="form-label">Date de naissance</label>
+                <input type="date" class="form-control" id="yearsBorn" placeholder="votre date de naissance" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="photo" class="form-label">Importer une photo de profil</label>
+                <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+            </div>
+
+            <!-- Bouton de connexion -->
+            <a type="submit" class="btn btn-primary w-100" href="/">S'inscrire</a>
+
+            <!-- Lien Mot de passe oublié -->
+            <div class="text-center mt-3">
+                <a href="/connexion" class="text-secondary"> vous avez ? connecter vous ici !</a>
+            </div>
+        </form>
+    </div>
+</div>

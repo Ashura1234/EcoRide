@@ -1,0 +1,59 @@
+<div class="container mt-4 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-4 rounded" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center text-primary mb-3">Créer un trajet</h3>
+        <form>
+            <!-- Champ Prénom -->
+            <div class="mb-3">
+                <label for="DateDepart" class="form-label">Date de départ</label>
+                <input type="date" class="form-control" id="DateDepart" placeholder="date de départ" required>
+            </div>
+
+            <!-- Nom -->
+            <div class="mb-3">
+                <label for="heureDepart" class="form-label"> Heure de départ</label>
+                <input type="time" class="form-control" id="heureDepart" placeholder="Heure de départ" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lieuDepart" class="form-label">Lieu de départ</label>
+                <input type="text" class="form-control" id="lieuDepart" placeholder="lieu de départ" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="dateArrivee" class="form-label">Date d'arrivée</label>
+                <input type="date" class="form-control" id="dateArrivee" placeholder="date d'arrivée" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="heureArrivee" class="form-label">Heure d'arrivée </label>
+                <input type="time" class="form-control" id="heureArrivee" placeholder="heureArrivee" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lieuArrivee" class="form-label">Lieu d'arrivée</label>
+                <input type="text" class="form-control" id="lieuArrivee" name="Lieu d'arrivée" 
+                    placeholder="Lieu d'arrivée" 
+                    required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="statut" class="form-label"> Statut </label>
+                <input type="text" class="form-control" id="statut" placeholder="Personne en situation de handicap, etc..." required>
+            </div>
+
+            <div class="mb-3">
+                <label for="numberPlace" class="form-label">Nombre de place disponible </label>
+                <input type="number" class="form-control" id="numberPlace" placeholder="nombre de place disponible dans votre véhicule" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="prix" class="form-label"> Prix par personne </label>
+                <input type="number" class="form-control" id="prix" placeholder="Le montant que chaque personne payera" required>
+            </div>
+
+            <!-- Bouton de création de trajet -->
+            <a type="submit" class="btn btn-primary w-100" href="/mesTrajets">Créer le voyage</a>
+
+        </form>
+    </div>
+</div>

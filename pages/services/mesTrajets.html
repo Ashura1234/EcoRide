@@ -1,0 +1,78 @@
+<div class="container mt-4">
+    <!-- Bouton pour afficher/masquer la carte -->
+    <div class="d-flex justify-content-center">
+        <button class="btn btn-primary d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#trajet1">
+            <span id="icon" class="me-2">➕</span> Voir le trajet
+        </button>
+    </div>
+
+    <!-- Carte du trajet -->
+    <div class="collapse mt-3" id="trajet1">
+        <div class="card shadow-lg p-4 rounded">
+            <h3 class="text-center text-primary mb-3">Trajet 1 Enregistré</h3>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Date de départ</label>
+                    <input type="date" class="form-control" value="2025-02-20" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Heure de départ</label>
+                    <input type="time" class="form-control" value="08:30" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Lieu de départ</label>
+                    <input type="text" class="form-control" value="Paris" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Date d'arrivée</label>
+                    <input type="date" class="form-control" value="2025-02-20" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Heure d'arrivée</label>
+                    <input type="time" class="form-control" value="12:15" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Lieu d'arrivée</label>
+                    <input type="text" class="form-control" value="Lyon" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Statut</label>
+                    <input type="text" class="form-control" value="Aucun" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre de places disponibles</label>
+                    <input type="number" class="form-control" value="3" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Prix par personne (€)</label>
+                    <input type="number" class="form-control" value="20" readonly>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Changement de l'icône en fonction de l'état de la carte
+    document.querySelector('[data-bs-toggle="collapse"]').addEventListener('click', function () {
+        let icon = document.getElementById("icon");
+        setTimeout(() => {
+            if (document.getElementById("trajet1").classList.contains("show")) {
+                icon.innerText = "➖"; // Icône moins quand la carte est ouverte
+            } else {
+                icon.innerText = "➕"; // Icône plus quand la carte est fermée
+            }
+        }, 200);
+    });
+</script>
+
+</body>
+</html>
