@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h2 class="text-center text-primary">Contactez-nous</h2>
+
+    <form action="send_mail.php" method="POST" class="shadow-lg p-4 rounded">
+        <div class="mb-3">
+            <label class="form-label">Nom</label>
+            <input type="text" class="form-control" name="nom" placeholder="Votre nom" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Votre email" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Sujet</label>
+            <input type="text" class="form-control" name="sujet" placeholder="Sujet de votre message" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" name="message" rows="4" placeholder="Votre message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+    </form>
+</div>
+

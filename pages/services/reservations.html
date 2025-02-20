@@ -1,1 +1,42 @@
-réservations
+<div class="container mt-4 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-4 rounded" style="max-width: 400px; width: 100%;">
+        <h3 class="text-center text-primary mb-3">réservation</h3>
+        <form>
+            <!-- Champ Prénom -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="name" placeholder="Prénom..." required>
+            </div>
+
+            <!-- Nom -->
+            <div class="mb-3">
+                <label for="firstName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Nom" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Votre age" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mail" class="form-label">Adresse mail</label>
+                <input type="mail" class="form-control" id="mail" placeholder="votre adresse mail" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="passagerNumber" class="form-label">Nombre de passager </label>
+                <input type="number" class="form-control" id="passagerNumber" placeholder="nombre de passager" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="detailsStatut" class="form-label">Détails</label>
+                <input type="text" class="form-control" id="phoneNumber" name="Détails...(personne en situation de handicap, Le Bruit, )" 
+                    required>
+            </div>
+
+            <!-- Bouton de connexion -->
+            <a type="submit" class="btn btn-primary w-100" href="/">payer</a>
+        </form>
+    </div>
+</div>

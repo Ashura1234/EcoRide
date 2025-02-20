@@ -1,1 +1,141 @@
-itineraire
+<body>
+
+<div class="container mt-4 itineraire">
+    <h2 class="text-center text-primary mb-4">Liste des Itinéraires</h2>
+
+    <div class="trip-card">
+        <div class="d-flex justify-content-between align-items-center">
+            <strong>17 JANVIER 2025</strong>
+            <strong>PARIS - BORDEAUX</strong>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>⏰ 10:00 PARIS</span>
+            <i class="bi bi-brightness-alt-high-fill"></i>
+            <span>15:55 BORDEAUX</span>
+        </div>
+        <hr class="my-2">
+        <div class="d-flex align-items-center mt-2">
+            <img class="profile-img me-2" src="../../images/man.webp"></img>
+            <strong>BENOIS</strong> ⭐ 4,9
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>2 PLACES RESTANTES</span>
+            <button type="button" class="text-primary btn btn-center" data-bs-toggle="modal" data-bs-target="#voyageModal">DÉTAILS</btn>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <a class="credit-btn btn btn-primary" href="/reservations">4 CRÉDIT</a>
+        </div>
+    </div>
+
+    <div class="trip-card">
+        <div class="d-flex justify-content-between align-items-center">
+            <strong>17 JANVIER 2025</strong>
+            <strong>PARIS - BORDEAUX</strong>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>⏰ 10:00 PARIS</span>
+            <i class="bi bi-brightness-alt-high-fill"></i>
+            <span>15:55 BORDEAUX</span>
+        </div>
+        <hr class="my-2">
+        <div class="d-flex align-items-center mt-2">
+            <img class="profile-img me-2" src="../../images/man.webp"></img>
+            <strong>BENOIS</strong> ⭐ 4,9
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>2 PLACES RESTANTES</span>
+            <button type="button" class="text-primary btn btn-center" data-bs-toggle="modal" data-bs-target="#voyageModal">DÉTAILS</btn>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <a class="credit-btn btn btn-primary" href="/reservations">4 CRÉDIT</a>
+        </div>
+    </div>
+
+    <div class="trip-card">
+        <div class="d-flex justify-content-between align-items-center">
+            <strong>17 JANVIER 2025</strong>
+            <strong>PARIS - BORDEAUX</strong>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>⏰ 10:00 PARIS</span>
+            <i class="bi bi-brightness-alt-high-fill"></i>
+            <span>15:55 BORDEAUX</span>
+        </div>
+        <hr class="my-2">
+        <div class="d-flex align-items-center mt-2">
+            <img class="profile-img me-2" src="../../images/man.webp"></img>
+            <strong>BENOIS</strong> ⭐ 4,9
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+            <span>2 PLACES RESTANTES</span>
+            <button type="button" class="text-primary btn btn-center" data-bs-toggle="modal" data-bs-target="#voyageModal">DÉTAILS</btn>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <a class="credit-btn btn btn-primary" href="/reservations">4 CRÉDIT</a>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<!--le style de la page itineraire-->
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .trip-card {
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background: #fff;
+    }
+    .credit-btn {
+        background: #007bff;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-weight: bold;
+        border: none;
+    }
+    .profile-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ddd;
+        display: inline-block;
+    }
+
+    hr {
+border: none;
+height: 4px; 
+background: #007bff; 
+opacity: 0.7; 
+}
+</style>
+
+<!--la modal pour les détails -->
+
+<!-- MODAL -->
+<div class="modal fade" id="voyageModal" tabindex="-1" aria-labelledby="voyageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="voyageModalLabel">Détails du Voyage</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Places restantes :</strong> 2</li>
+                    <li class="list-group-item"><strong>Fumeur :</strong> Non</li>
+                    <li class="list-group-item"><strong>Animaux acceptés :</strong> Oui</li>
+                    <li class="list-group-item"><strong>Voyage écologique :</strong> Oui ✅</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
