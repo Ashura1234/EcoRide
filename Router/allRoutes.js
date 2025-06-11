@@ -2,10 +2,10 @@ import Route from "./route.js";
 
 //Définir ici vos routes
 export const allRoutes = [
-    new Route("/", "Accueil", "/pages/accueil.html"),
+    new Route("/", "Accueil", "/pages/accueil.php"),
     new Route("404", "Page introuvable", "/pages/404.html"),
-    new Route("/connexion", "connexion", "/pages/functions/connexion.html", "/pages/config/scripts/connexion.js",["disconnected"]),
-    new Route("/inscription", "inscription", "/pages/functions/inscription.html", "/pages/config/script/inscription.js", ["disconnected"]),
+    new Route("/connexion", "connexion", "/pages/functions/connexion.html", ["disconnected"], "/pages/config/script/connexion.js"),
+    new Route("/inscription", "inscription", "/pages/functions/inscription.html",["disconnected"], "/pages/config/script/inscription.js"),
     new Route("/deconnexion", "déconnexion", "/pages/functions/deconnexion.html"),
     new Route("/itineraire", "itinéraire", "/pages/services/itineraire.html"),
     new Route ("/reservations", "mes réservations", "/pages/services/reservations.html"),

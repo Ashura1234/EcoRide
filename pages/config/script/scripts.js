@@ -48,12 +48,25 @@ function eraseCookie(name) {
 }
 
 function isConnected(){
-    if(getToken() == null || getToken == undefined){
+    const token = getToken();
+    if(token == null || token == undefined){
         return false;
     }else{
         return true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const token = getToken(); // suppose que tu as une fonction pour récupérer le token
+    const isConnected = !!token;
+
+    document.querySelectorAll("[data-show]").forEach(el => {
+        const shouldShow = el.getAttribute("data-show") === (isConnected ? "connected" : "disconnected");
+        el.style.display = shouldShow ? "" : "none";
+    });
+});
+
+
 /*
 5 utilisateurs possible :
 1- utilisateur déconnecté 
@@ -93,3 +106,7 @@ function showAndHideElement(){
         }
     })
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    showAndHideElement();
+});
