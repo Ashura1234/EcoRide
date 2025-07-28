@@ -1,7 +1,6 @@
 //je veux implémenter le js de ma page, je vais vérifier le champ requis
-
-const inputPrenom = document.getElementById("nom");
-const inputNom = document.getElementById("prenom");
+const inputPrenom = document.getElementById("prenom");
+const inputNom = document.getElementById("nom");
 const inputPseudo = document.getElementById("pseudo");
 const inputMail = document.getElementById("mail");
 const inputMdp = document.getElementById("password");
@@ -10,6 +9,7 @@ const inputNaissance = document.getElementById("yearsBorn");
 const inputTel = document.getElementById("phoneNumber");
 const inputPfp = document.getElementById("photo");
 const btnInscription = document.getElementById("btn-inscription");
+const form = document.getElementById("inscription-form");
 
 inputPrenom.addEventListener("keyup", validateForm);
 inputNom.addEventListener("keyup", validateForm);
@@ -142,3 +142,42 @@ function dateValid(input) {
         return false;
     }
 }
+
+btnInscription.addEventListener("click", async (e) => {
+    e.preventDefault();
+
+    const form = document.querySelector("#inscription-form");
+    const formData = new FormData(form);
+
+    // 👇 Ajoute ça ici pour voir si les données sont bien captées
+    for (let [key, value] of formData.entries()) {
+        console.log(`${key}:`, value);
+    }
+
+    try {
+        const response = await fetch("/pages/config/script/createUser.php", {
+            method: "POST",
+            body: formData
+        });
+
+        const contentType = response.headers.get("Content-Type");
+
+        if (!contentType || !contentType.includes("application/json")) {
+            const text = await response.text();
+            console.error("Réponse non-JSON :", text);
+            alert("❌ Erreur serveur : réponse non-JSON");
+            return;
+        }
+
+        const result = await response.json();
+
+        if (result.success) {
+            alert("✅ " + result.message);
+            window.location.href = "/connexion";
+        } else {
+            alert("❌ " + result.error);
+        }
+    } catch (error) {
+        alert("❌ Erreur lors de l'inscription.");
+    }
+});

@@ -23,7 +23,7 @@ try {
         exit();
     } else {
         // Si l'email ou le mot de passe est incorrect
-        header("Location: /signin?error=incorecte"); // Rediriger vers la page de connexion avec une erreur
+        header("Location: /"); // Rediriger vers la page de connexion avec une erreur
         exit();
     }
 } catch (PDOException $e) {

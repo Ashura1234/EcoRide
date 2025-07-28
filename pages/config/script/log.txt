@@ -1,0 +1,72 @@
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+)
+Fichiers : Array
+(
+)
+Reçu : Array
+(
+    [prenom] => f
+    [nom] => r
+    [pseudo] => y
+    [mail] => p@gmail.com
+    [mdp] => Emmanuel123mph_
+    [passwordConfirm] => Emmanuel123mph_
+    [telephone] => +33123456789
+    [dateNaissance] => 0003-02-02
+)
+Fichiers : Array
+(
+    [photo] => Array
+        (
+            [name] => efb79ab5ed537f5c531c26bc063e78c0.jpg
+            [full_path] => efb79ab5ed537f5c531c26bc063e78c0.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\Users\zkxvo\AppData\Local\Temp\php4527.tmp
+            [error] => 0
+            [size] => 156369
+        )
+
+)

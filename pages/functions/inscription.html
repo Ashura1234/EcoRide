@@ -1,7 +1,7 @@
 <div class="container mt-4 d-flex justify-content-center align-items-center">
     <div class="card shadow-lg p-4 rounded" style="max-width: 400px; width: 100%;">
         <h3 class="text-center text-primary mb-3">Inscription</h3>
-        <form action="/pages/config/script/createUser.php" method="POST" enctype="multipart/form-data">
+        <form id="inscription-form" enctype="multipart/form-data">
             <!-- Prénom -->
             <div class="mb-3">
                 <label for="prenom" class="form-label">Prénom</label>
@@ -88,7 +88,7 @@
             </div>
 
             <!-- Bouton d'inscription -->
-            <button type="submit" class="btn btn-primary w-100" id="btn-inscription">S'inscrire</button>
+            <button type="button" class="btn btn-primary w-100" id="btn-inscription">S'inscrire</button>
 
             <!-- Lien vers connexion -->
             <div class="text-center mt-3">
